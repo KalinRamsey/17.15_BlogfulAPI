@@ -140,7 +140,7 @@ describe('Articles Endpoints', function() {
 
   describe(`POST /api/articles`, () =>{
     const testUsers = makeUsersArray();
-    this.beforeEach('insert malicious article', () => {
+    beforeEach('insert malicious article', () => {
       return db
         .into('blogful_users')
         .insert(testUsers)
